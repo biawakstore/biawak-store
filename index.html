@@ -1,32 +1,121 @@
-<!-- Produk 1 -->
-<div class="product">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Varanus_salvator_01.jpg" alt="Biawak Lokal" width="400">
-  <div class="product-info">
-    <h3>Biawak Papua</h3>
-    <p class="price">Rp 2.500.000</p>
-    <p class="desc">Biawak rwa rawa, memiliki corak alami khas rawa rawa. Cocok untuk pemula karena perawatannya mudah.</p>
-    <a class="btn-whatsapp" href="https://wa.me/6282257660240?text=Halo%20saya%20ingin%20beli%20Biawak%20Lokal" target="_blank">Beli via WhatsApp</a>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeri Produk Biawak</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-<!-- Produk 2 -->
-<div class="product">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Albino_argentine_tegu.jpg" alt="Biawak Albino" width="400">
-  <div class="product-info">
-    <h3>Biawak Albino</h3>
-    <p class="price">Rp 5.000.000</p>
-    <p class="desc">Biawak albino langka dari Argentina, memiliki warna putih kekuningan yang mencolok dan sangat jinak.</p>
-    <a class="btn-whatsapp" href="https://wa.me/6282257660240?text=Halo%20saya%20ingin%20beli%20Biawak%20Albino" target="_blank">Beli via WhatsApp</a>
-  </div>
-</div>
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-<!-- Produk 3 -->
-<div class="product">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Albino_argentine_tegu.jpg" alt="Biawak Jinak" width="400">
-  <div class="product-info">
-    <h3>Biawak Jinak</h3>
-    <p class="price">Rp 1.800.000</p>
-    <p class="desc">Biawak yang sudah terlatih dan terbiasa dengan manusia. Cocok untuk dipelihara dalam rumah atau kandang outdoor.</p>
-    <a class="btn-whatsapp" href="https://wa.me/6282257660240?text=Halo%20saya%20ingin%20beli%20Biawak%20Jinak" target="_blank">Beli via WhatsApp</a>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #27ae60;
+      margin: 8px 0;
+      font-size: 18px;
+    }
+
+    .desc {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .btn-whatsapp {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebe5b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galeri Produk Biawak</h1>
+
+  <div class="grid">
+    <!-- Produk 1 -->
+    <div class="product">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Varanus_salvator_01.jpg" alt="Biawak Papua" />
+      <div class="product-info">
+        <h3>Biawak Papua</h3>
+        <p class="price">Rp 2.500.000</p>
+        <p class="desc">Biawak rawa rawa, memiliki corak alami khas rawa rawa. Cocok untuk pemula karena perawatannya mudah.</p>
+        <a class="btn-whatsapp" href="https://wa.me/6282257660240?text=Halo%20saya%20ingin%20beli%20Biawak%20Lokal" target="_blank">Beli via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="product">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Albino_argentine_tegu.jpg" alt="Biawak Albino" />
+      <div class="product-info">
+        <h3>Biawak Albino</h3>
+        <p class="price">Rp 5.000.000</p>
+        <p class="desc">Biawak albino langka dari Argentina, memiliki warna putih kekuningan yang mencolok dan sangat jinak.</p>
+        <a class="btn-whatsapp" href="https://wa.me/6282257660240?text=Halo%20saya%20ingin%20beli%20Biawak%20Albino" target="_blank">Beli via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="product">
+      <img src="https://www.utusan.com.my/wp-content/uploads/2021/03/biawak-liar-jinak-di-tangan-naufal.jpg" alt="Biawak Jinak" />
+      <div class="product-info">
+        <h3>Biawak Jinak</h3>
+        <p class="price">Rp 1.800.000</p>
+        <p class="desc">Biawak yang sudah terlatih dan terbiasa dengan manusia. Cocok untuk dipelihara dalam rumah atau kandang outdoor.</p>
+        <a class="btn-whatsapp" href="https://wa.me/6282257660240?text=Halo%20saya%20ingin%20beli%20Biawak%20Jinak" target="_blank">Beli via WhatsApp</a>
+      </div>
+    </div>
   </div>
-</div>
+</body>
+</html>
