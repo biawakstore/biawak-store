@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toko Biawak Online</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+
+    header {
+      background: #34495e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: 0.3s;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .price {
+      color: #2ecc71;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #34495e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .product-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Toko Biawak</h1>
+  <p>Jual beli biawak eksotis langsung dari peternak!</p>
+</header>
+
+<div class="container">
+  <div class="product-grid">
+
+    <!-- Produk 1 -->
+    <div class="product">
+      <img src="https://example.com/biawak1.jpg" alt="Biawak Lokal">
+      <div class="product-info">
+        <h3>Biawak Papua</h3>
+        <p class="price">Rp 2.500.000</p>
+        <a class="btn-whatsapp" href="https://wa.me/62882257660240?text=Halo%20saya%20ingin%20beli%20Biawak%20Lokal" target="_blank">Beli via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="product">
+      <img src="https://example.com/biawak2.jpg" alt="Biawak Albino">
+      <div class="product-info">
+        <h3>Biawak Albino</h3>
+        <p class="price">Rp 5.000.000</p>
+        <a class="btn-whatsapp" href="https://wa.me/62882257660240?text=Halo%20saya%20ingin%20beli%20Biawak%20Albino" target="_blank">Beli via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="product">
+      <img src="https://example.com/biawak3.jpg" alt="Biawak Jinak">
+      <div class="product-info">
+        <h3>Biawak Jinak</h3>
+        <p class="price">Rp 1.800.000</p>
+        <a class="btn-whatsapp" href="https://wa.me/6282257660240?text=Halo%20saya%20ingin%20beli%20Biawak%20Jinak" target="_blank">Beli via WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Toko Biawak. Kontak: +62 82257660240
+</footer>
+
+</body>
+      </html>
+      
